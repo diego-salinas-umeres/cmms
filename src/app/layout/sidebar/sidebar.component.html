@@ -1,0 +1,13 @@
+<div class="w-[10vw] h-[95vh]">
+    <div class="pl-4 pt-4">
+        <a *ngFor="let items of list; index as i" class="flex flex-col w-full text-black bg-neutral-50 h-16 px-2 text-[10px] mb-4" href={{items.route}}>
+            <div class="flex flex-col w-full justify-center items-center pt-2">
+                <img class="h-8" [src]="items.icon">
+                <div class="h-2 w-full text-center">
+                    {{items.name}}
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
