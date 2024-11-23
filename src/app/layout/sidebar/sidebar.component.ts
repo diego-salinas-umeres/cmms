@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { routes } from '../../app.routes';
 
 @Component({
   selector: 'app-sidebar',
@@ -10,12 +9,10 @@ import { routes } from '../../app.routes';
   styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
-
   list = [
-    {name:'INVENTARIO', route:'/inventory'}, 
-    {name:'ORDENES DE TRABAJO', route:'/work-order'},
-    {name:'CRONOGRAMA', route:'/schedule'},
-    {name:'USUARIOS', route:'/users'},
+    {name:'INVENTARIO', route:'/inventory',icon:'app/assets/icons/box.svg'}, 
+    {name:'ORDENES DE TRABAJO', route:'/work-order', icon:'app/assets/icons/work-order.svg'},
+    {name:'CRONOGRAMA', route:'/schedule', icon:'app/assets/icons/schedule.svg'},
+    {name:'USUARIOS', route:'/users', icon:'app/assets/icons/users.svg'},
   ]
-
 }
