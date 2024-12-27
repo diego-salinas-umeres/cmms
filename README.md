@@ -1,27 +1,42 @@
-# Test2
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+/project-name
+├── /src
+│   ├── /app
+│   │   ├── /core
+│   │   │   ├── /services      # Servicios generales (autenticación, notificaciones, etc.)
+│   │   │   ├── /guards        # Guards para proteger rutas
+│   │   │   ├── /interceptors  # Interceptores HTTP
+│   │   │   ├── /models        # Modelos de datos (interfaces, clases)
+│   │   │   └── core.module.ts # Módulo central para servicios globales
+│   │   ├── /shared
+│   │   │   ├── /components    # Componentes reutilizables (botones, tablas)
+│   │   │   ├── /directives    # Directivas reutilizables
+│   │   │   ├── /pipes         # Pipes reutilizables
+│   │   │   └── shared.module.ts # Módulo para componentes/direcciones compartidas
+│   │   ├── /features
+│   │   │   ├── /dashboard     # Módulo del dashboard principal
+│   │   │   ├── /inventory     # Gestión de inventarios
+│   │   │   ├── /maintenance   # Gestión de mantenimiento
+│   │   │   └── /users         # Gestión de usuarios y roles
+│   │   ├── /layout
+│   │   │   ├── /header        # Componente de encabezado
+│   │   │   ├── /footer        # Componente de pie de página
+│   │   │   └── /sidebar       # Componente de barra lateral
+│   │   ├── app-routing.module.ts # Configuración de rutas
+│   │   └── app.module.ts      # Módulo raíz
+│   ├── /assets
+│   │   ├── /images            # Imágenes estáticas
+│   │   ├── /styles            # Archivos CSS/SCSS globales
+│   │   ├── /icons             # Iconos
+│   │   └── /i18n              # Archivos de traducción
+│   ├── /environments
+│   │   ├── environment.ts     # Configuración para desarrollo
+│   │   └── environment.prod.ts # Configuración para producción
+│   ├── index.html             # HTML principal
+│   ├── main.ts                # Archivo de inicio de Angular
+│   ├── polyfills.ts           # Compatibilidad con navegadores antiguos
+│   └── styles.scss            # Estilos globales
+├── /e2e                       # Pruebas end-to-end
+├── angular.json               # Configuración del CLI de Angular
+├── package.json               # Dependencias y scripts del proyecto
+├── tsconfig.json              # Configuración del compilador TypeScript
+└── README.md                  # Documentación inicial del proyecto
